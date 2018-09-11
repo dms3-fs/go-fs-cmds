@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmdkit/files"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit/files"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 // parseRequest parses the data in a http.Request and returns a command Request object

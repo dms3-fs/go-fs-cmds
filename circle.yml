@@ -1,6 +1,6 @@
 machine:
   environment:
-    IMPORT_PATH: "github.com/ipfs/go-ipfs-cmds"
+    IMPORT_PATH: "github.com/dms3-fs/go-fs-cmds"
     GOPATH: "$HOME/.go_workspace"
 
   services:
@@ -15,7 +15,7 @@ dependencies:
     - cd "$HOME/.go_workspace/src/$IMPORT_PATH" && make deps
 
   cache_directories:
-    - "~/.go_workspace/src/gx/ipfs"
+    - "~/.go_workspace/src/gx/dms3-fs"
 
 test:
   override:

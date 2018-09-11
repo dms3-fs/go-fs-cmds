@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 var (

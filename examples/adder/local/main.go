@@ -4,10 +4,10 @@ import (
 	"context"
 	"os"
 
-	"github.com/ipfs/go-ipfs-cmds/examples/adder"
+	"github.com/dms3-fs/go-fs-cmds/examples/adder"
 
-	"github.com/ipfs/go-ipfs-cmds"
-	"github.com/ipfs/go-ipfs-cmds/cli"
+	"github.com/dms3-fs/go-fs-cmds"
+	"github.com/dms3-fs/go-fs-cmds/cli"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package cmds
 
 import (
-	"github.com/ipfs/go-ipfs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit"
 )
 
 // Flag names

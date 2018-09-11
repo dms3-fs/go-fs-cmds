@@ -8,8 +8,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmds"
 )
 
 const (
@@ -42,10 +42,10 @@ type helpFields struct {
 // TrimNewlines removes extra newlines from fields. This makes aligning
 // commands easier. Below, the leading + tralining newlines are removed:
 //	Synopsis: `
-//	    ipfs config <key>          - Get value of <key>
-//	    ipfs config <key> <value>  - Set value of <key> to <value>
-//	    ipfs config --show         - Show config file
-//	    ipfs config --edit         - Edit config file in $EDITOR
+//	    dms3fs config <key>          - Get value of <key>
+//	    dms3fs config <key> <value>  - Set value of <key> to <value>
+//	    dms3fs config --show         - Show config file
+//	    dms3fs config --edit         - Edit config file in $EDITOR
 //	`
 func (f *helpFields) TrimNewlines() {
 	f.Path = strings.Trim(f.Path, "\n")

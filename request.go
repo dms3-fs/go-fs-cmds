@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmdkit/files"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit/files"
 )
 
 // Request represents a call to a command from a consumer

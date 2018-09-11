@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmds"
 )
 
 type kvs map[string]interface{}

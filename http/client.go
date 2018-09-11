@@ -10,9 +10,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmdkit/files"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit/files"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 const (
@@ -61,7 +61,7 @@ func NewClient(address string, opts ...ClientOpt) Client {
 	c := &client{
 		serverAddress: address,
 		httpClient:    http.DefaultClient,
-		ua:            "go-ipfs-cmds/http",
+		ua:            "go-fs-cmds/http",
 	}
 
 	for _, opt := range opts {

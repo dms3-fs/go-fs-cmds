@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	cmds "github.com/ipfs/go-ipfs-cmds"
-	logging "github.com/ipfs/go-log"
+	cmds "github.com/dms3-fs/go-fs-cmds"
+	logging "github.com/dms3-fs/go-log"
 	cors "github.com/rs/cors"
 )
 

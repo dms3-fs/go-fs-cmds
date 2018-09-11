@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 func TestClientUserAgent(t *testing.T) {
@@ -17,7 +17,7 @@ func TestClientUserAgent(t *testing.T) {
 	}
 
 	tcs := []testcase{
-		{ua: "/go-ipfs/0.4", path: []string{"version"}},
+		{ua: "/go-dms3-fs/0.4", path: []string{"version"}},
 	}
 
 	for _, tc := range tcs {

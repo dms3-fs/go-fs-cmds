@@ -3,9 +3,9 @@ package main
 import (
 	nethttp "net/http"
 
-	"github.com/ipfs/go-ipfs-cmds/examples/adder"
+	"github.com/dms3-fs/go-fs-cmds/examples/adder"
 
-	http "github.com/ipfs/go-ipfs-cmds/http"
+	http "github.com/dms3-fs/go-fs-cmds/http"
 )
 
 func main() {

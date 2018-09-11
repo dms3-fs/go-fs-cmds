@@ -10,20 +10,20 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ipfs/go-ipfs-cmds"
+	"github.com/dms3-fs/go-fs-cmds"
 
 	osh "github.com/Kubuxu/go-os-helper"
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmdkit/files"
-	logging "github.com/ipfs/go-log"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit/files"
+	logging "github.com/dms3-fs/go-log"
 )
 
 var log = logging.Logger("cmds/cli")
-var msgStdinInfo = "ipfs: Reading from %s; send Ctrl-d to stop."
+var msgStdinInfo = "dms3fs: Reading from %s; send Ctrl-d to stop."
 
 func init() {
 	if osh.IsWindows() {
-		msgStdinInfo = "ipfs: Reading from %s; send Ctrl-z to stop."
+		msgStdinInfo = "dms3fs: Reading from %s; send Ctrl-z to stop."
 	}
 }
 

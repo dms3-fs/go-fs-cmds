@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
-	"github.com/ipfs/go-ipfs-cmds"
-	"github.com/ipfs/go-ipfs-cmds/cli"
+	"github.com/dms3-fs/go-fs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmds"
+	"github.com/dms3-fs/go-fs-cmds/cli"
 )
 
 // AddStatus describes the progress of the add operation

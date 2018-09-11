@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	cmdkit "github.com/ipfs/go-ipfs-cmdkit"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	cmdkit "github.com/dms3-fs/go-fs-cmdkit"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 func TestParse(t *testing.T) {

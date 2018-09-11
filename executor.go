@@ -3,7 +3,7 @@ package cmds
 import (
 	"context"
 
-	"github.com/ipfs/go-ipfs-cmdkit"
+	"github.com/dms3-fs/go-fs-cmdkit"
 )
 
 type Executor interface {

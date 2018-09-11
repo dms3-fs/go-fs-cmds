@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"testing"
 
-	cmdkit "github.com/ipfs/go-ipfs-cmdkit"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	cmdkit "github.com/dms3-fs/go-fs-cmdkit"
+	cmds "github.com/dms3-fs/go-fs-cmds"
 )
 
 type VersionOutput struct {
@@ -56,8 +56,8 @@ var (
 		Subcommands: map[string]*cmds.Command{
 			"version": &cmds.Command{
 				Helptext: cmdkit.HelpText{
-					Tagline:          "Show ipfs version information.",
-					ShortDescription: "Returns the current version of ipfs and exits.",
+					Tagline:          "Show dms3fs version information.",
+					ShortDescription: "Returns the current version of dms3fs and exits.",
 				},
 				Type: VersionOutput{},
 				Options: []cmdkit.Option{
@@ -109,14 +109,14 @@ var (
 						}
 
 						if all, ok := req.Options["all"].(bool); ok && all {
-							_, err := fmt.Fprintf(w, "go-ipfs version: %s-%s\n"+
+							_, err := fmt.Fprintf(w, "go-dms3-fs version: %s-%s\n"+
 								"Repo version: %s\nSystem version: %s\nGolang version: %s\n",
 								v.Version, v.Commit, v.Repo, v.System, v.Golang)
 
 							return err
 						}
 
-						_, err := fmt.Fprintf(w, "ipfs version %s%s\n", v.Version, commitTxt)
+						_, err := fmt.Fprintf(w, "dms3fs version %s%s\n", v.Version, commitTxt)
 						return err
 					}),
 				},
